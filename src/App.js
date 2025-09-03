@@ -5,37 +5,37 @@ const projects = [
   {
     title: "MK Design",
     desc: "A design for a furniture brand",
-    img: "/images/mk-design.jpg.jpg",
+    img: "/images/mk-design.jpg",
   },
   {
     title: "Florida Hair Beauty",
     desc: "A banner design for a hair stylist",
-    img: "/images/florida-hair.jpg.jpeg",
+    img: "/images/florida-hair.jpeg",
   },
   {
     title: "Church Valentine Program",
     desc: "A design for a church valentine program",
-    img: "/images/valentine-program.jpg.jpg",
+    img: "/images/valentine-program.jpg",
   },
   {
     title: "Church Prayer Program",
     desc: "A design for a church prayer program",
-    img: "/images/prayer-program.jpg.jpg",
+    img: "/images/prayer-program.jpg",
   },
   {
     title: "Fashion Brand Logo",
     desc: "A logo design for a fashion designing brand",
-    img: "/images/fashion-logo.jpg.jpg",
+    img: "/images/fashion-logo.jpg",
   },
   {
     title: "Hair Stylist Logo",
     desc: "A logo design for a hair stylist brand",
-    img: "/images/hair-logo.jpg.jpg",
+    img: "/images/hair-logo.jpg",
   },
   {
     title: "Crypto Community Logo",
     desc: "A logo design for a crypto community",
-    img: "/images/crypto-logo.jpg.jpeg",
+    img: "/images/crypto-logo.jpeg",
   },
 ];
 
