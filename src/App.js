@@ -1,82 +1,47 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { FaEnvelope, FaWhatsapp, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const projects = [
   {
     title: "MK Design",
     desc: "A design for a furniture brand",
-    img: "/Images/mk-design.jpg",
+    img: "/images/mk-design.jpg",
   },
   {
     title: "Florida Hair Beauty",
     desc: "A banner design for a hair stylist",
-    img: "/Images/florida-hair.jpeg",
+    img: "/images/florida-hair.jpeg",
   },
   {
     title: "Church Valentine Program",
     desc: "A design for a church valentine program",
-    img: "/Images/valentine-program.jpg",
+    img: "/images/valentine-program.jpg",
   },
   {
     title: "Church Prayer Program",
     desc: "A design for a church prayer program",
-    img: "/Images/prayer-program.jpg",
+    img: "/images/prayer-program.jpg",
   },
   {
     title: "Fashion Brand Logo",
     desc: "A logo design for a fashion designing brand",
-    img: "/Images/fashion-logo.jpg",
+    img: "/images/fashion-logo.jpg",
   },
   {
     title: "Hair Stylist Logo",
     desc: "A logo design for a hair stylist brand",
-    img: "/Images/hair-logo.jpg",
+    img: "/images/hair-logo.jpg",
   },
   {
     title: "Crypto Community Logo",
     desc: "A logo design for a crypto community",
-    img: "/Images/crypto-logo.jpeg",
+    img: "/images/crypto-logo.jpeg",
   },
 ];
 
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
-      {/* SEO Metadata */}
-      <Helmet>
-        <title>Emmanuel Oluwadamilare Oke – Graphics Designer</title>
-        <meta
-          name="description"
-          content="Portfolio of Emmanuel Oluwadamilare Oke, a graphics designer passionate about branding, logos, and visual storytelling."
-        />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Emmanuel Oluwadamilare Oke – Graphics Designer" />
-        <meta
-          property="og:description"
-          content="Explore my portfolio of creative branding, logos, and visual storytelling designs."
-        />
-        <meta
-          property="og:image"
-          content="https://gifted-portfolio-gamma.vercel.app/Images/og-preview.jpg"
-        />
-        <meta property="og:url" content="https://gifted-portfolio-gamma.vercel.app" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Emmanuel Oluwadamilare Oke – Graphics Designer" />
-        <meta
-          name="twitter:description"
-          content="Portfolio of Emmanuel Oluwadamilare Oke, showcasing creative branding, logos, and visual storytelling."
-        />
-        <meta
-          name="twitter:image"
-          content="https://gifted-portfolio-gamma.vercel.app/Images/og-preview.jpg"
-        />
-      </Helmet>
-
       {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-2xl font-bold text-gray-800">
@@ -89,7 +54,7 @@ export default function App() {
         </p>
       </header>
 
-      {/* Projects Grid */}
+      {/* Projects */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         {projects.map((project, index) => (
           <div
@@ -104,7 +69,7 @@ export default function App() {
             <h3 className="font-bold text-lg text-gray-800">{project.title}</h3>
             <p className="text-gray-600">{project.desc}</p>
 
-            {/* Hover Overlay with Link */}
+            {/* Hover View */}
             <a
               href={project.img}
               target="_blank"
@@ -117,38 +82,20 @@ export default function App() {
         ))}
       </div>
 
-      {/* Social Icons */}
+      {/* Footer */}
       <footer className="bg-white shadow p-6 rounded-xl text-center max-w-lg mx-auto">
         <h2 className="font-semibold text-lg text-gray-800 mb-4">Let’s Connect</h2>
         <div className="flex justify-center gap-6 text-2xl text-gray-600">
-          <a
-            href="mailto:okeoluwadamilare0@gmail.com"
-            className="hover:text-gray-900 transition"
-          >
+          <a href="mailto:okeoluwadamilare0@gmail.com" className="hover:text-gray-900 transition">
             <FaEnvelope />
           </a>
-          <a
-            href="https://wa.me/2349075594478"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-600 transition"
-          >
+          <a href="https://wa.me/2349075594478" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition">
             <FaWhatsapp />
           </a>
-          <a
-            href="https://instagram.com/oluwagifted_official"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-600 transition"
-          >
+          <a href="https://instagram.com/oluwagifted_official" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 transition">
             <FaInstagram />
           </a>
-          <a
-            href="https://twitter.com/oluwagifted20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500 transition"
-          >
+          <a href="https://twitter.com/oluwagifted20" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
             <FaTwitter />
           </a>
         </div>
