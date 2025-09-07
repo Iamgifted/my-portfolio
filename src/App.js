@@ -91,13 +91,13 @@ export default function App() {
         </h2>
         <div className="flex justify-center gap-6 text-2xl text-gray-600">
           <a
-            href="mailto:okeoluwadamilareo@gmail.com"
+            href="mailto:okeoluwadamilare0@gmail.com"
             className="hover:text-gray-900 transition"
           >
             <FaEnvelope />
           </a>
           <a
-            href="https://wa.me/2349075520478"
+            href="https://wa.me/2349075594478"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-600 transition"
@@ -105,7 +105,7 @@ export default function App() {
             <FaWhatsapp />
           </a>
           <a
-            href="https://instagram.com/yourhandle"
+            href="https://instagram.com/oluwagifted_official"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-600 transition"
@@ -113,7 +113,7 @@ export default function App() {
             <FaInstagram />
           </a>
           <a
-            href="https://twitter.com/yourhandle"
+            href="https://twitter.com/oluwagifted20"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-500 transition"
