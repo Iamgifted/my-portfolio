@@ -55,8 +55,8 @@ export default function App() {
           property="og:description"
           content="Explore my portfolio of creative branding, logos, and visual storytelling designs."
         />
-        <meta property="og:image" content="/Images/og-preview.jpg" />
-        <meta property="og:url" content="https://oluwagifted-portfolio.vercel.app" />
+        <meta property="og:image" content="https://gifted-portfolio-gamma.vercel.app/Images/og-preview.jpg" />
+<meta property="og:url" content="https://gifted-portfolio-gamma.vercel.app" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
