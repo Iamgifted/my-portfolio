@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaEnvelope, FaWhatsapp, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const projects = [
@@ -42,6 +43,23 @@ const projects = [
 export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
+      {/* SEO Metadata */}
+      <Helmet>
+        <title>Emmanuel Oluwadamilare Oke – Graphics Designer</title>
+        <meta
+          name="description"
+          content="Portfolio of Emmanuel Oluwadamilare Oke, a graphics designer passionate about branding, logos, and visual storytelling."
+        />
+        <meta property="og:title" content="Emmanuel Oluwadamilare Oke – Graphics Designer" />
+        <meta
+          property="og:description"
+          content="Explore my portfolio of creative branding, logos, and visual storytelling designs."
+        />
+        <meta property="og:image" content="/Images/og-preview.jpg" />
+        <meta property="og:url" content="https://oluwagifted-portfolio.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       {/* Header */}
       <header className="text-center mb-10">
         <h1 className="text-2xl font-bold text-gray-800">
@@ -66,9 +84,7 @@ export default function App() {
               alt={project.title}
               className="h-48 w-full object-cover rounded-lg mb-4"
             />
-            <h3 className="font-bold text-lg text-gray-800">
-              {project.title}
-            </h3>
+            <h3 className="font-bold text-lg text-gray-800">{project.title}</h3>
             <p className="text-gray-600">{project.desc}</p>
 
             {/* Hover Overlay with Link */}
