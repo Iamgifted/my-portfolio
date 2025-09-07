@@ -54,7 +54,7 @@ export default function App() {
         </p>
       </header>
 
-      {/* Projects */}
+      {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         {projects.map((project, index) => (
           <div
@@ -69,7 +69,7 @@ export default function App() {
             <h3 className="font-bold text-lg text-gray-800">{project.title}</h3>
             <p className="text-gray-600">{project.desc}</p>
 
-            {/* Hover View */}
+            {/* Hover Overlay with Link */}
             <a
               href={project.img}
               target="_blank"
@@ -82,20 +82,40 @@ export default function App() {
         ))}
       </div>
 
-      {/* Footer */}
+      {/* Social Icons */}
       <footer className="bg-white shadow p-6 rounded-xl text-center max-w-lg mx-auto">
-        <h2 className="font-semibold text-lg text-gray-800 mb-4">Let’s Connect</h2>
+        <h2 className="font-semibold text-lg text-gray-800 mb-4">
+          Let’s Connect
+        </h2>
         <div className="flex justify-center gap-6 text-2xl text-gray-600">
-          <a href="mailto:okeoluwadamilare0@gmail.com" className="hover:text-gray-900 transition">
+          <a
+            href="mailto:okeoluwadamilare0@gmail.com"
+            className="hover:text-gray-900 transition"
+          >
             <FaEnvelope />
           </a>
-          <a href="https://wa.me/2349075594478" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition">
+          <a
+            href="https://wa.me/2349075594478"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-600 transition"
+          >
             <FaWhatsapp />
           </a>
-          <a href="https://instagram.com/oluwagifted_official" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 transition">
+          <a
+            href="https://instagram.com/oluwagifted_official"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-600 transition"
+          >
             <FaInstagram />
           </a>
-          <a href="https://twitter.com/oluwagifted20" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
+          <a
+            href="https://twitter.com/oluwagifted20"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 transition"
+          >
             <FaTwitter />
           </a>
         </div>
