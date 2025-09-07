@@ -50,14 +50,31 @@ export default function App() {
           name="description"
           content="Portfolio of Emmanuel Oluwadamilare Oke, a graphics designer passionate about branding, logos, and visual storytelling."
         />
+
+        {/* Open Graph */}
         <meta property="og:title" content="Emmanuel Oluwadamilare Oke – Graphics Designer" />
         <meta
           property="og:description"
           content="Explore my portfolio of creative branding, logos, and visual storytelling designs."
         />
-        <meta property="og:image" content="https://gifted-portfolio-gamma.vercel.app/Images/og-preview.jpg" />
-<meta property="og:url" content="https://gifted-portfolio-gamma.vercel.app" />
+        <meta
+          property="og:image"
+          content="https://gifted-portfolio-gamma.vercel.app/Images/og-preview.jpg"
+        />
+        <meta property="og:url" content="https://gifted-portfolio-gamma.vercel.app" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Emmanuel Oluwadamilare Oke – Graphics Designer" />
+        <meta
+          name="twitter:description"
+          content="Portfolio of Emmanuel Oluwadamilare Oke, showcasing creative branding, logos, and visual storytelling."
+        />
+        <meta
+          name="twitter:image"
+          content="https://gifted-portfolio-gamma.vercel.app/Images/og-preview.jpg"
+        />
       </Helmet>
 
       {/* Header */}
@@ -102,9 +119,7 @@ export default function App() {
 
       {/* Social Icons */}
       <footer className="bg-white shadow p-6 rounded-xl text-center max-w-lg mx-auto">
-        <h2 className="font-semibold text-lg text-gray-800 mb-4">
-          Let’s Connect
-        </h2>
+        <h2 className="font-semibold text-lg text-gray-800 mb-4">Let’s Connect</h2>
         <div className="flex justify-center gap-6 text-2xl text-gray-600">
           <a
             href="mailto:okeoluwadamilare0@gmail.com"
